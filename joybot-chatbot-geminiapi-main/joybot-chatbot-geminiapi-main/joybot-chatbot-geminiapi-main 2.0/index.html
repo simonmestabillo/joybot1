@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="chat-window" aria-label="Chat Window" draggable="true">
+        
+ 
+        <div class="chat-header">
+            <span class="back-button" aria-label="Go Back">←</span>
+            <img src="JoyBOTlogo2.png" alt="Bot Avatar" class="bot-avatar">
+            <div>
+                <div class="title">  <b> JoyBOT</B></div>
+                <div class="subtitle">🟢 Online </div>
+            </div>
+            <span class="drag-button" aria-label="Drag Chat">⇲</span>
+        </div>
+
+        <div class="chat">
+            <div class="model">
+                <img src="JoyBOTlogo2.png" alt="Bot Avatar" class="bot-avatar">
+                <p>
+                    Hello, Welcome to <b>JoyBOT!</b> <b>Quezon City University's Assistant Bot!</b>
+                    You can ask me anything about the school, courses, and other information you need.
+                </p>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input placeholder="Ask me anything..." type="text" aria-label="Chat Input">
+            <button aria-label="Send Message">
+                <img src="send-icon.png" alt="Send">
+            </button>
+        </div>
+    </section>
+
+    <div class="chat-button" aria-label="Open Chat">
+        <img src="JoyBOTlogo2.png" alt="Start Chat">
+    </div>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+    
+    <script type="module" src="main.js"></script>
+    
+</body>
+</html>
